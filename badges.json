@@ -1,0 +1,3364 @@
+{
+ "version": "2026-10-12",
+ "game": "NBA 2K27",
+ "notes": [
+  "Badge list (53), thresholds, height ranges, descriptions & token costs: NBA 2K27 data from NBA2KLab, cross-checked by my2kbuilder (all cells marked cross_checked).",
+  "Legend cannot be unlocked at creation; only via Synergy boosts (official 2K MyPLAYER Builder page).",
+  "Playstyle tags and priority scoring are this app's own heuristic \u2014 not from 2K or creators."
+ ],
+ "synergy": {
+  "status": "verified-partial",
+  "text": [
+   "16 Synergy slots in 8 Fuse/Reaction pairs (official: 16 total, +1 or +2). Split of six +1 pairs and two +2 pairs is community-reported (NBA2KLab, lockercodes, ANF builder).",
+   "Fuse badge: permanent +1/+2 tier for the whole game and costs 0 tokens.",
+   "Reaction badge: gets the same boost after its Fuse triggers enough times in a game; still costs tokens. Each Fuse allows only certain Reactions.",
+   "+1 turns Gold\u2192HoF or HoF\u2192Legend; +2 turns Gold\u2192Legend.",
+   "Unlocks: Season 1 rewards (4 pairs, expire at season end), Crew Lv 28 & 39 (+1, permanent), Build Specialization Goal 10 (+2, permanent; Fuse must match discipline), REP Legend II (+2, permanent)."
+  ],
+  "sources": [
+   {
+    "name": "2K \u2013 MyPLAYER Builder (official)",
+    "url": "https://nba.2k.com/en-GB/2k27/features/myplayer-builder/"
+   },
+   {
+    "name": "lockercodes \u2013 Badge slots & tokens",
+    "url": "https://www.lockercodes.io/nba-2k/badge-slots-tokens"
+   },
+   {
+    "name": "ANF Build Finder glossary",
+    "url": "https://anf-nba-2k27-builder.vercel.app/glossary"
+   },
+   {
+    "name": "howtovideogame \u2013 Synergy",
+    "url": "https://howtovideogame.com/nba-2k27-how-to-unlock-synergy/"
+   }
+  ]
+ },
+ "capBreakers": {
+  "status": "community-reported",
+  "text": [
+   "Cap Breakers unlock once the build reaches 99 OVR.",
+   "Up to 5 per attribute, 28 total per build across all sources (incl. Build Specialization).",
+   "Each breaker adds a variable boost (bigger when the stat is lower), never above the body's max for that stat. Exact per-breaker amounts are NOT modeled in this app."
+  ],
+  "sources": [
+   {
+    "name": "ANF Build Finder glossary",
+    "url": "https://anf-nba-2k27-builder.vercel.app/glossary"
+   },
+   {
+    "name": "2K \u2013 MyPLAYER Builder (official)",
+    "url": "https://nba.2k.com/en-GB/2k27/features/myplayer-builder/"
+   }
+  ]
+ },
+ "slots": {
+  "text": "Every build starts with 20 badge slots across six disciplines; badges are equipped with Badge Tokens (official 2K)."
+ },
+ "badges": [
+  {
+   "name": "Arc Cadence",
+   "category": "Shooting",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "threePoint",
+     "t": [
+      70,
+      86,
+      91,
+      98
+     ]
+    }
+   ],
+   "description": "Improves a player's ability to knock down 3-point shots on the move, including pull-ups, hop-steps, or spin shots.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 83,
+   "styles": [
+    "shooter",
+    "playmaker"
+   ]
+  },
+  {
+   "name": "Deadeye",
+   "category": "Shooting",
+   "logic": "OR",
+   "reqs": [
+    {
+     "attr": "midRange",
+     "t": [
+      65,
+      85,
+      92,
+      99
+     ]
+    },
+    {
+     "attr": "threePoint",
+     "t": [
+      65,
+      85,
+      92,
+      99
+     ]
+    }
+   ],
+   "description": "Jump shots taken with a defender closing out receive less of a penalty from a shot contest.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "shooter"
+   ]
+  },
+  {
+   "name": "Limitless Range",
+   "category": "Shooting",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "threePoint",
+     "t": [
+      83,
+      89,
+      93,
+      99
+     ]
+    }
+   ],
+   "description": "Extends the range from which a player can shoot 3PT shots effectively from deep.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "shooter"
+   ]
+  },
+  {
+   "name": "Mini Marksman",
+   "category": "Shooting",
+   "logic": "OR",
+   "reqs": [
+    {
+     "attr": "midRange",
+     "t": [
+      60,
+      79,
+      94,
+      99
+     ]
+    },
+    {
+     "attr": "threePoint",
+     "t": [
+      60,
+      79,
+      94,
+      99
+     ]
+    }
+   ],
+   "description": "Shorter shooters are less bothered by lengthy defenders.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 76,
+   "styles": [
+    "shooter"
+   ]
+  },
+  {
+   "name": "Post Fade Phenom",
+   "category": "Shooting",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "midRange",
+     "t": [
+      60,
+      71,
+      84,
+      91
+     ]
+    },
+    {
+     "attr": "postControl",
+     "t": [
+      55,
+      74,
+      84,
+      93
+     ]
+    }
+   ],
+   "description": "Improves ability to make post fades and hop shots.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "post"
+   ]
+  },
+  {
+   "name": "Quick Trigger",
+   "category": "Shooting",
+   "logic": "OR",
+   "reqs": [
+    {
+     "attr": "midRange",
+     "t": [
+      80,
+      88,
+      95,
+      99
+     ]
+    },
+    {
+     "attr": "threePoint",
+     "t": [
+      80,
+      88,
+      95,
+      99
+     ]
+    }
+   ],
+   "description": "Improves a player's ability to make no-dip jump shots.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "shooter"
+   ]
+  },
+  {
+   "name": "Set and Fire",
+   "category": "Shooting",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "threePoint",
+     "t": [
+      60,
+      78,
+      89,
+      97
+     ]
+    }
+   ],
+   "description": "Applies a shooting boost to 3-point shots when the player's feet are completely set.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "shooter"
+   ]
+  },
+  {
+   "name": "Smooth Operator",
+   "category": "Shooting",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "midRange",
+     "t": [
+      70,
+      87,
+      93,
+      99
+     ]
+    }
+   ],
+   "description": "Improves a player's ability to knock down mid-range shots on the move, including pull-ups, hop-steps, or spin shots.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "shooter",
+    "playmaker"
+   ]
+  },
+  {
+   "name": "Static Middy",
+   "category": "Shooting",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "midRange",
+     "t": [
+      55,
+      75,
+      85,
+      95
+     ]
+    }
+   ],
+   "description": "Applies a shooting boost to stand-still mid-range shots.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "shooter"
+   ]
+  },
+  {
+   "name": "Ankle Assassin",
+   "category": "Playmaking",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "ballHandle",
+     "t": [
+      75,
+      86,
+      93,
+      96
+     ]
+    }
+   ],
+   "description": "Increases the ability to break down the defender and cross them up.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 82,
+   "styles": [
+    "slasher",
+    "playmaker"
+   ]
+  },
+  {
+   "name": "Bail Out",
+   "category": "Playmaking",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "passAccuracy",
+     "t": [
+      85,
+      93,
+      96,
+      99
+     ]
+    }
+   ],
+   "description": "Passing out of a jump shot or layup yields fewer errant passes than normal. Additionally helps passing out of double teams.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "playmaker"
+   ]
+  },
+  {
+   "name": "Break Starter",
+   "category": "Playmaking",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "passAccuracy",
+     "t": [
+      65,
+      77,
+      89,
+      97
+     ]
+    }
+   ],
+   "description": "After grabbing a defensive rebound, deep outlet passes made up the court are more accurate. Passes must be made quickly following the defensive rebound.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "playmaker",
+    "rebounder"
+   ]
+  },
+  {
+   "name": "Dimer",
+   "category": "Playmaking",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "passAccuracy",
+     "t": [
+      50,
+      70,
+      86,
+      95
+     ]
+    }
+   ],
+   "description": "Boosts the shot percentage for open teammates after catching a pass.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "playmaker"
+   ]
+  },
+  {
+   "name": "Handles for Days",
+   "category": "Playmaking",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "ballHandle",
+     "t": [
+      71,
+      81,
+      90,
+      95
+     ]
+    }
+   ],
+   "description": "Allows a player to take less of an energy hit when performing consecutive dribble moves.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 84,
+   "styles": [
+    "slasher",
+    "playmaker"
+   ]
+  },
+  {
+   "name": "Lightning Launch",
+   "category": "Playmaking",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "speedWithBall",
+     "t": [
+      68,
+      75,
+      86,
+      91
+     ]
+    }
+   ],
+   "description": "Speeds up launches when attacking from the perimeter.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 83,
+   "styles": [
+    "slasher",
+    "playmaker"
+   ]
+  },
+  {
+   "name": "Pace",
+   "category": "Playmaking",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "speedWithBall",
+     "t": [
+      70,
+      80,
+      88,
+      93
+     ]
+    }
+   ],
+   "description": "Raises the speed of the ball handler when sprinting.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 82,
+   "styles": [
+    "slasher",
+    "playmaker"
+   ]
+  },
+  {
+   "name": "Strong Handle",
+   "category": "Playmaking",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "ballHandle",
+     "t": [
+      60,
+      67,
+      73,
+      78
+     ]
+    },
+    {
+     "attr": "strength",
+     "t": [
+      75,
+      82,
+      89,
+      95
+     ]
+    }
+   ],
+   "description": "Reduces the likelihood of being bothered by defenders when dribbling.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 83,
+   "styles": [
+    "slasher",
+    "playmaker"
+   ]
+  },
+  {
+   "name": "Unpluckable",
+   "category": "Playmaking",
+   "logic": "OR",
+   "reqs": [
+    {
+     "attr": "postControl",
+     "t": [
+      65,
+      86,
+      96,
+      null
+     ]
+    },
+    {
+     "attr": "ballHandle",
+     "t": [
+      65,
+      80,
+      92,
+      97
+     ]
+    }
+   ],
+   "description": "Defenders have a tougher time poking the ball free with their steal attempts.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "slasher",
+    "playmaker"
+   ]
+  },
+  {
+   "name": "Versatile Visionary",
+   "category": "Playmaking",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "passAccuracy",
+     "t": [
+      65,
+      80,
+      90,
+      99
+     ]
+    }
+   ],
+   "description": "Improves a player's ability to thread and fire tight passes, including alley-oops, quickly and on time.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "playmaker"
+   ]
+  },
+  {
+   "name": "Aerial Wizard",
+   "category": "Finishing",
+   "logic": "OR",
+   "reqs": [
+    {
+     "attr": "drivingDunk",
+     "t": [
+      60,
+      70,
+      80,
+      94
+     ]
+    },
+    {
+     "attr": "standingDunk",
+     "t": [
+      60,
+      70,
+      80,
+      93
+     ]
+    }
+   ],
+   "description": "Increases ability to finish an alley-oop dunk from a teammate, or an in-air putback dunk off an offensive rebound.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "slasher",
+    "rebounder"
+   ]
+  },
+  {
+   "name": "Float Game",
+   "category": "Finishing",
+   "logic": "OR",
+   "reqs": [
+    {
+     "attr": "closeShot",
+     "t": [
+      65,
+      80,
+      90,
+      96
+     ]
+    },
+    {
+     "attr": "drivingLayup",
+     "t": [
+      65,
+      85,
+      93,
+      95
+     ]
+    }
+   ],
+   "description": "Increases a player's ability to finish floaters.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "slasher"
+   ]
+  },
+  {
+   "name": "Ghost Stepper",
+   "category": "Finishing",
+   "logic": "OR",
+   "reqs": [
+    {
+     "attr": "closeShot",
+     "t": [
+      55,
+      77,
+      86,
+      94
+     ]
+    },
+    {
+     "attr": "postControl",
+     "t": [
+      55,
+      77,
+      86,
+      94
+     ]
+    }
+   ],
+   "description": "Increases the effectiveness of step-through layups or other close-range shots that come after a shot fake.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "slasher",
+    "post"
+   ]
+  },
+  {
+   "name": "Hook Specialist",
+   "category": "Finishing",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "closeShot",
+     "t": [
+      60,
+      75,
+      87,
+      94
+     ]
+    },
+    {
+     "attr": "postControl",
+     "t": [
+      55,
+      65,
+      80,
+      90
+     ]
+    }
+   ],
+   "description": "Improves ability to make post hooks.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "post"
+   ]
+  },
+  {
+   "name": "Layup Mixmaster",
+   "category": "Finishing",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "drivingLayup",
+     "t": [
+      70,
+      83,
+      90,
+      99
+     ]
+    }
+   ],
+   "description": "Improves a player's ability to finish fancy or acrobatic layups.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 84,
+   "styles": [
+    "slasher"
+   ]
+  },
+  {
+   "name": "Paint Prodigy",
+   "category": "Finishing",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "closeShot",
+     "t": [
+      60,
+      85,
+      90,
+      96
+     ]
+    }
+   ],
+   "description": "Improves a player's ability to quickly and effectively score while going to work in the paint.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 75,
+   "maxHeight": 88,
+   "styles": [
+    "post"
+   ]
+  },
+  {
+   "name": "Physical Finisher",
+   "category": "Finishing",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "drivingLayup",
+     "t": [
+      60,
+      80,
+      90,
+      96
+     ]
+    },
+    {
+     "attr": "strength",
+     "t": [
+      60,
+      70,
+      80,
+      90
+     ]
+    }
+   ],
+   "description": "Improves a player's ability to battle through contact and convert contact layups.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "slasher",
+    "post"
+   ]
+  },
+  {
+   "name": "Post Powerhouse",
+   "category": "Finishing",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "postControl",
+     "t": [
+      60,
+      75,
+      85,
+      95
+     ]
+    },
+    {
+     "attr": "strength",
+     "t": [
+      65,
+      79,
+      86,
+      95
+     ]
+    }
+   ],
+   "description": "Strengthens a player's ability at backing down defenders and moving them with drop steps.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 77,
+   "maxHeight": 88,
+   "styles": [
+    "post"
+   ]
+  },
+  {
+   "name": "Post Spin Catalyst",
+   "category": "Finishing",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "postControl",
+     "t": [
+      65,
+      83,
+      91,
+      99
+     ]
+    }
+   ],
+   "description": "Attempting post spins or drives results in more effective moves and less of a chance to be stripped.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 73,
+   "maxHeight": 88,
+   "styles": [
+    "post"
+   ]
+  },
+  {
+   "name": "Posterizer",
+   "category": "Finishing",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "drivingDunk",
+     "t": [
+      73,
+      87,
+      93,
+      99
+     ]
+    },
+    {
+     "attr": "vertical",
+     "t": [
+      65,
+      75,
+      80,
+      90
+     ]
+    }
+   ],
+   "description": "Increases the chances of throwing down a dunk on your defender while driving to the hoop.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "slasher"
+   ]
+  },
+  {
+   "name": "Rise Up",
+   "category": "Finishing",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "standingDunk",
+     "t": [
+      60,
+      81,
+      90,
+      99
+     ]
+    },
+    {
+     "attr": "vertical",
+     "t": [
+      55,
+      62,
+      66,
+      70
+     ]
+    }
+   ],
+   "description": "Increases the likelihood of dunking on your opponent when standing in the painted area.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 77,
+   "maxHeight": 88,
+   "styles": [
+    "post",
+    "rebounder"
+   ]
+  },
+  {
+   "name": "Ankle Braces",
+   "category": "Defense",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "perimeterDefense",
+     "t": [
+      60,
+      86,
+      93,
+      95
+     ]
+    },
+    {
+     "attr": "agility",
+     "t": [
+      65,
+      82,
+      89,
+      92
+     ]
+    }
+   ],
+   "description": "Lowers the likelihood of getting ankle-broken by opposing dribble moves.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 81,
+   "styles": [
+    "lockdown"
+   ]
+  },
+  {
+   "name": "Challenger",
+   "category": "Defense",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "perimeterDefense",
+     "t": [
+      71,
+      82,
+      92,
+      98
+     ]
+    }
+   ],
+   "description": "Improves the effectiveness of well-timed contests against perimeter shooters.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 83,
+   "styles": [
+    "lockdown"
+   ]
+  },
+  {
+   "name": "Glove",
+   "category": "Defense",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "steal",
+     "t": [
+      70,
+      83,
+      93,
+      99
+     ]
+    }
+   ],
+   "description": "Increases the ability to successfully steal from ball handlers or strip layup attempts.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 84,
+   "styles": [
+    "lockdown"
+   ]
+  },
+  {
+   "name": "High-Flying Denier",
+   "category": "Defense",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "block",
+     "t": [
+      68,
+      78,
+      88,
+      92
+     ]
+    },
+    {
+     "attr": "vertical",
+     "t": [
+      60,
+      74,
+      80,
+      83
+     ]
+    }
+   ],
+   "description": "Boosts the speed and leaping ability of a defensive player in anticipation of a chase-down block attempt.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 75,
+   "maxHeight": 88,
+   "styles": [
+    "rim_protector"
+   ]
+  },
+  {
+   "name": "Immovable Enforcer",
+   "category": "Defense",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "perimeterDefense",
+     "t": [
+      62,
+      72,
+      84,
+      91
+     ]
+    },
+    {
+     "attr": "strength",
+     "t": [
+      71,
+      82,
+      85,
+      92
+     ]
+    }
+   ],
+   "description": "Improves a defensive player's strength when defending ball handlers and finishers coming straight at them.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "lockdown",
+    "rim_protector"
+   ]
+  },
+  {
+   "name": "Interceptor",
+   "category": "Defense",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "steal",
+     "t": [
+      60,
+      77,
+      90,
+      97
+     ]
+    }
+   ],
+   "description": "The frequency of successfully tipped or intercepted passes greatly increases.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "lockdown"
+   ]
+  },
+  {
+   "name": "Off-Ball Pest",
+   "category": "Defense",
+   "logic": "OR",
+   "reqs": [
+    {
+     "attr": "interiorDefense",
+     "t": [
+      60,
+      76,
+      85,
+      93
+     ]
+    },
+    {
+     "attr": "perimeterDefense",
+     "t": [
+      55,
+      68,
+      80,
+      89
+     ]
+    }
+   ],
+   "description": "Makes players more difficult to get past when playing off-ball, as they can grab and hold their matchup.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "lockdown"
+   ]
+  },
+  {
+   "name": "Paint Patroller",
+   "category": "Defense",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "interiorDefense",
+     "t": [
+      60,
+      71,
+      77,
+      84
+     ]
+    },
+    {
+     "attr": "block",
+     "t": [
+      70,
+      84,
+      93,
+      99
+     ]
+    }
+   ],
+   "description": "Increases a player's ability to block or contest shots at the rim.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 77,
+   "maxHeight": 88,
+   "styles": [
+    "rim_protector"
+   ]
+  },
+  {
+   "name": "Pick Dodger",
+   "category": "Defense",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "perimeterDefense",
+     "t": [
+      73,
+      83,
+      90,
+      97
+     ]
+    },
+    {
+     "attr": "agility",
+     "t": [
+      71,
+      81,
+      88,
+      91
+     ]
+    }
+   ],
+   "description": "Improves a player's ability to navigate through and around screens while on defense.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 82,
+   "styles": [
+    "lockdown"
+   ]
+  },
+  {
+   "name": "Post Lockdown",
+   "category": "Defense",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "interiorDefense",
+     "t": [
+      65,
+      82,
+      88,
+      93
+     ]
+    },
+    {
+     "attr": "strength",
+     "t": [
+      65,
+      74,
+      80,
+      88
+     ]
+    }
+   ],
+   "description": "Strengthens a player's ability to effectively defend moves in the post, with an increased chance of stripping the opponent.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 77,
+   "maxHeight": 88,
+   "styles": [
+    "rim_protector"
+   ]
+  },
+  {
+   "name": "Seatbelt",
+   "category": "Defense",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "perimeterDefense",
+     "t": [
+      75,
+      85,
+      91,
+      99
+     ]
+    },
+    {
+     "attr": "agility",
+     "t": [
+      70,
+      77,
+      80,
+      86
+     ]
+    }
+   ],
+   "description": "Boost body-up defense effectiveness, making it easier to clamp opponents and disrupt their drive path.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 81,
+   "styles": [
+    "lockdown"
+   ]
+  },
+  {
+   "name": "Wall Up",
+   "category": "Defense",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "interiorDefense",
+     "t": [
+      80,
+      85,
+      95,
+      99
+     ]
+    },
+    {
+     "attr": "strength",
+     "t": [
+      75,
+      80,
+      90,
+      92
+     ]
+    }
+   ],
+   "description": "Improves shot contest effectiveness during hands-up defense when guarding the paint.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 77,
+   "maxHeight": 88,
+   "styles": [
+    "rim_protector"
+   ]
+  },
+  {
+   "name": "Boxout Boss",
+   "category": "Rebounding",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "defensiveRebound",
+     "t": [
+      65,
+      75,
+      90,
+      98
+     ]
+    },
+    {
+     "attr": "strength",
+     "t": [
+      60,
+      76,
+      88,
+      94
+     ]
+    }
+   ],
+   "description": "Improves the effectiveness of boxouts as the boxer.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 75,
+   "maxHeight": 88,
+   "styles": [
+    "rim_protector",
+    "rebounder"
+   ]
+  },
+  {
+   "name": "Breaker",
+   "category": "Rebounding",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "offensiveRebound",
+     "t": [
+      65,
+      82,
+      92,
+      98
+     ]
+    },
+    {
+     "attr": "strength",
+     "t": [
+      70,
+      79,
+      90,
+      96
+     ]
+    }
+   ],
+   "description": "Increases the success rate of breaking through opponent boxouts.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 75,
+   "maxHeight": 88,
+   "styles": [
+    "rebounder"
+   ]
+  },
+  {
+   "name": "Crasher",
+   "category": "Rebounding",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "offensiveRebound",
+     "t": [
+      60,
+      80,
+      93,
+      99
+     ]
+    },
+    {
+     "attr": "vertical",
+     "t": [
+      60,
+      65,
+      67,
+      70
+     ]
+    }
+   ],
+   "description": "Boost a player's ability to track down or grab rebounds on the offensive end.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "rebounder"
+   ]
+  },
+  {
+   "name": "Possession Closer",
+   "category": "Rebounding",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "defensiveRebound",
+     "t": [
+      67,
+      87,
+      95,
+      99
+     ]
+    },
+    {
+     "attr": "vertical",
+     "t": [
+      60,
+      65,
+      67,
+      70
+     ]
+    }
+   ],
+   "description": "Boost a player's ability to grab rebounds on the defensive end.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "rim_protector",
+    "rebounder"
+   ]
+  },
+  {
+   "name": "Sync Snatcher",
+   "category": "Rebounding",
+   "logic": "OR",
+   "reqs": [
+    {
+     "attr": "offensiveRebound",
+     "t": [
+      55,
+      70,
+      82,
+      90
+     ]
+    },
+    {
+     "attr": "defensiveRebound",
+     "t": [
+      55,
+      70,
+      82,
+      90
+     ]
+    }
+   ],
+   "description": "Gives an additional Vertical and Rebounding boost when perfectly timing the jump.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "rebounder"
+   ]
+  },
+  {
+   "name": "Brick Wall",
+   "category": "Physicals",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "strength",
+     "t": [
+      75,
+      83,
+      95,
+      99
+     ]
+    }
+   ],
+   "description": "Increases the effectiveness of screens.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 77,
+   "maxHeight": 88,
+   "styles": [
+    "post",
+    "rebounder"
+   ]
+  },
+  {
+   "name": "Bruiser",
+   "category": "Physicals",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "strength",
+     "t": [
+      71,
+      84,
+      93,
+      99
+     ]
+    }
+   ],
+   "description": "Drains energy from opponents when making physical contact.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "slasher",
+    "post"
+   ]
+  },
+  {
+   "name": "Flash",
+   "category": "Physicals",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "speed",
+     "t": [
+      70,
+      82,
+      87,
+      95
+     ]
+    },
+    {
+     "attr": "agility",
+     "t": [
+      60,
+      78,
+      81,
+      91
+     ]
+    }
+   ],
+   "description": "Speeds up movement without the ball while in transition on offense or defense.",
+   "tokens": [
+    3,
+    5,
+    6,
+    7
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "shooter",
+    "lockdown"
+   ]
+  },
+  {
+   "name": "Pogo Stick",
+   "category": "Physicals",
+   "logic": "SINGLE",
+   "reqs": [
+    {
+     "attr": "vertical",
+     "t": [
+      63,
+      70,
+      80,
+      90
+     ]
+    }
+   ],
+   "description": "Allows players to quickly go back up for another jump upon landing. This applies after a rebound, block attempt, or jump shot.",
+   "tokens": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "slasher",
+    "rim_protector",
+    "rebounder"
+   ]
+  },
+  {
+   "name": "Slippery Off-Ball",
+   "category": "Physicals",
+   "logic": "AND",
+   "reqs": [
+    {
+     "attr": "speed",
+     "t": [
+      57,
+      73,
+      85,
+      94
+     ]
+    },
+    {
+     "attr": "agility",
+     "t": [
+      57,
+      65,
+      77,
+      90
+     ]
+    }
+   ],
+   "description": "When attempting to get open off screens, the player more effectively navigates through traffic.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 81,
+   "styles": [
+    "shooter"
+   ]
+  },
+  {
+   "name": "Work Horse",
+   "category": "Physicals",
+   "logic": "OR",
+   "reqs": [
+    {
+     "attr": "agility",
+     "t": [
+      60,
+      75,
+      85,
+      95
+     ]
+    },
+    {
+     "attr": "strength",
+     "t": [
+      60,
+      75,
+      85,
+      95
+     ]
+    }
+   ],
+   "description": "Increases a player's speed and ability to get loose balls over the opponent.",
+   "tokens": [
+    2,
+    4,
+    5,
+    6
+   ],
+   "verified": true,
+   "sources": [
+    {
+     "name": "NBA2KLab \u2013 Badge Requirements",
+     "url": "https://www.nba2klab.com/badge-requirements"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Descriptions",
+     "url": "https://www.nba2klab.com/badge-descriptions"
+    },
+    {
+     "name": "NBA2KLab \u2013 Badge Token Costs",
+     "url": "https://www.nba2klab.com/badge-tokens"
+    },
+    {
+     "name": "my2kbuilder \u2013 cross-checked requirement table",
+     "url": "https://my2kbuilder.com/badge-requirements"
+    }
+   ],
+   "minHeight": 69,
+   "maxHeight": 88,
+   "styles": [
+    "lockdown",
+    "rebounder"
+   ]
+  }
+ ],
+ "recSources": {
+  "lab_pg": {
+   "name": "NBA2KLab \u2013 Recommended PG Builds (Max+ picks)",
+   "url": "https://www.nba2klab.com/recommended-pgs",
+   "kind": "lab"
+  },
+  "lab_lock": {
+   "name": "NBA2KLab \u2013 Recommended Lockdown Builds (Max+ picks)",
+   "url": "https://www.nba2klab.com/recommended-locks",
+   "kind": "lab"
+  },
+  "mmo_tier": {
+   "name": "MMOexp \u2013 2K27 Badge Tier List",
+   "url": "https://www.mmoexp.com/News/nba-2k27-badge-tier-list-best-shooting-finishing-playmaking-defense-and-rebounding-badges.html",
+   "kind": "community"
+  },
+  "mmo_meta": {
+   "name": "MMOexp \u2013 Best & Worst Badges (Guard/Center meta)",
+   "url": "https://www.mmoexp.com/News/nba-2k27-best-worst-badges-meta-guard-center-tier-list-2026.html",
+   "kind": "community"
+  },
+  "ts": {
+   "name": "timesaver.gg \u2013 Best Offensive Badges by Position (Season 1)",
+   "url": "https://timesaver.gg/blog/nba-2k27-best-offensive-badges-by-position",
+   "kind": "community"
+  },
+  "gg": {
+   "name": "games.gg \u2013 2K27 Badge List / PG Builds",
+   "url": "https://games.gg/nba-2k27/guides/nba-2k27-best-point-guard-builds/",
+   "kind": "community"
+  },
+  "zen": {
+   "name": "2K27 Lockdown Build Guide (zenscript blog)",
+   "url": "https://www.nba2k27zenscript.com/blog/nba-2k27-lockdown-defender-build-guide/",
+   "kind": "community"
+  },
+  "htv": {
+   "name": "howtovideogame \u2013 Synergy (Sept 17 Rise Up update)",
+   "url": "https://howtovideogame.com/nba-2k27-how-to-unlock-synergy/",
+   "kind": "community"
+  },
+  "reddit": {
+   "name": "r/NBA2k \u2013 2K27 Badge Requirements thread",
+   "url": "https://www.reddit.com/r/NBA2k/comments/1vuj8e4/nba_2k27_badge_requirements/",
+   "kind": "community"
+  }
+ },
+ "loadouts": {
+  "shooter": [
+   {
+    "badge": "Set and Fire",
+    "note": "Top catch-and-shoot 3PT badge; S-tier in community lists, Gold on NBA2KLab's Day-1 PG build.",
+    "src": [
+     "mmo_meta",
+     "mmo_tier",
+     "ts",
+     "lab_pg"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Arc Cadence",
+    "note": "S-tier if you shoot moving/off-dribble 3s.",
+    "src": [
+     "mmo_tier",
+     "lab_pg"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Limitless Range",
+    "note": "Silver is the cost-effective tier (deep range unlocked); Gold+ adds little per meta guide.",
+    "src": [
+     "mmo_meta",
+     "ts"
+    ],
+    "sweet": 1,
+    "avoid": false
+   },
+   {
+    "badge": "Deadeye",
+    "note": "Disputed: timesaver ranks it top for contested shots; MMOexp says Bronze/Silver is enough.",
+    "src": [
+     "ts",
+     "mmo_meta"
+    ],
+    "sweet": 1,
+    "avoid": false
+   },
+   {
+    "badge": "Smooth Operator",
+    "note": "Solid secondary for mid-range/fade shooters; Silver\u2013Gold.",
+    "src": [
+     "mmo_meta",
+     "mmo_tier"
+    ],
+    "sweet": 2,
+    "avoid": false
+   },
+   {
+    "badge": "Static Middy",
+    "note": "Cheap (55 Mid unlocks Bronze) set-feet mid-range boost; Silver\u2013Gold.",
+    "src": [
+     "mmo_meta",
+     "reddit"
+    ],
+    "sweet": 2,
+    "avoid": false
+   },
+   {
+    "badge": "Mini Marksman",
+    "note": "Guards 6'4\" and under only; Gold on NBA2KLab PG build.",
+    "src": [
+     "lab_pg"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Quick Trigger",
+    "note": "Community says poor value for its token cost \u2014 equip last.",
+    "src": [
+     "mmo_meta"
+    ],
+    "sweet": null,
+    "avoid": true
+   }
+  ],
+  "playmaker": [
+   {
+    "badge": "Handles for Days",
+    "note": "Core guard badge; NBA2KLab's top Max +1 target (Gold\u2192HoF).",
+    "src": [
+     "lab_pg",
+     "mmo_meta",
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Ankle Assassin",
+    "note": "Core meta break-down badge.",
+    "src": [
+     "mmo_meta",
+     "mmo_tier",
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Lightning Launch",
+    "note": "Core meta burst badge; Gold at 86 Speed w/ Ball.",
+    "src": [
+     "mmo_meta",
+     "gg"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Pace",
+    "note": "Part of the \"core four\" guard combo.",
+    "src": [
+     "mmo_meta"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Dimer",
+    "note": "Best passing badge for teammates' shooting; key for point forwards.",
+    "src": [
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Versatile Visionary",
+    "note": "Tight/lob passing.",
+    "src": [
+     "lab_pg"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Unpluckable",
+    "note": "Deprioritised in community tier lists.",
+    "src": [
+     "mmo_tier"
+    ],
+    "sweet": null,
+    "avoid": true
+   }
+  ],
+  "slasher": [
+   {
+    "badge": "Posterizer",
+    "note": "NBA2KLab Max +1/+2 target (Silver\u2192Gold/HoF); S-tier finisher.",
+    "src": [
+     "lab_pg",
+     "mmo_tier",
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Aerial Wizard",
+    "note": "Lob / putback finishing; Gold on NBA2KLab PG build.",
+    "src": [
+     "lab_pg",
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Physical Finisher",
+    "note": "Contact layups for wings.",
+    "src": [
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Layup Mixmaster",
+    "note": "Acrobatic layups.",
+    "src": [
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Lightning Launch",
+    "note": "Burst off the perimeter to get to the rim.",
+    "src": [
+     "mmo_meta"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Float Game",
+    "note": "Floaters; threshold rose vs 2K26.",
+    "src": [
+     "reddit"
+    ],
+    "sweet": null,
+    "avoid": false
+   }
+  ],
+  "lockdown": [
+   {
+    "badge": "Seatbelt",
+    "note": "NBA2KLab's top Max +1 target on lockdown builds (Gold\u2192HoF).",
+    "src": [
+     "lab_lock",
+     "mmo_meta"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Challenger",
+    "note": "Most important perimeter contest badge.",
+    "src": [
+     "mmo_tier",
+     "zen",
+     "lab_lock"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Interceptor",
+    "note": "NBA2KLab Max+ target; Silver is a solid baseline.",
+    "src": [
+     "lab_lock",
+     "lab_pg",
+     "mmo_meta",
+     "zen"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Glove",
+    "note": "Silver is enough per meta guide.",
+    "src": [
+     "mmo_meta",
+     "zen"
+    ],
+    "sweet": 1,
+    "avoid": false
+   },
+   {
+    "badge": "Ankle Braces",
+    "note": "Prevents ankle breaks.",
+    "src": [
+     "mmo_meta",
+     "lab_lock"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Pick Dodger",
+    "note": "Navigating screens.",
+    "src": [
+     "zen",
+     "lab_lock"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Off-Ball Pest",
+    "note": "HoF on NBA2KLab lockdown build.",
+    "src": [
+     "lab_lock",
+     "zen"
+    ],
+    "sweet": null,
+    "avoid": false
+   }
+  ],
+  "post": [
+   {
+    "badge": "Paint Prodigy",
+    "note": "Core big-man scoring.",
+    "src": [
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Post Powerhouse",
+    "note": "Back-downs and drop steps.",
+    "src": [
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Post Spin Catalyst",
+    "note": "Post spins.",
+    "src": [
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Rise Up",
+    "note": "Sept 17 update made Gold+ meaningfully stronger.",
+    "src": [
+     "htv",
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Hook Specialist",
+    "note": "Post hooks.",
+    "src": [
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Aerial Wizard",
+    "note": "Lob threat for bigs.",
+    "src": [
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Post Fade Phenom",
+    "note": "Post fades.",
+    "src": [
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   }
+  ],
+  "rim_protector": [
+   {
+    "badge": "Paint Patroller",
+    "note": "Blocks/contests at rim (Gold at 77 IntD + 93 Blk).",
+    "src": [
+     "gg",
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Wall Up",
+    "note": "Vertical contests in paint.",
+    "src": [
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Post Lockdown",
+    "note": "Post defense.",
+    "src": [
+     "mmo_meta"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "High-Flying Denier",
+    "note": "Chase-down blocks.",
+    "src": [
+     "lab_lock"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Brick Wall",
+    "note": "Screens; Gold at 95 Strength.",
+    "src": [
+     "gg",
+     "ts"
+    ],
+    "sweet": null,
+    "avoid": false
+   }
+  ],
+  "rebounder": [
+   {
+    "badge": "Sync Snatcher",
+    "note": "\"Arguably the most important\" rebounding badge.",
+    "src": [
+     "mmo_tier"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Boxout Boss",
+    "note": "Defensive boxouts.",
+    "src": [
+     "ts",
+     "gg"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Possession Closer",
+    "note": "Defensive boards.",
+    "src": [
+     "mmo_tier"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Crasher",
+    "note": "Offensive boards.",
+    "src": [
+     "mmo_tier"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Pogo Stick",
+    "note": "Second jumps.",
+    "src": [
+     "lab_pg"
+    ],
+    "sweet": null,
+    "avoid": false
+   },
+   {
+    "badge": "Breaker",
+    "note": "Deprioritised in community tier lists.",
+    "src": [
+     "mmo_tier"
+    ],
+    "sweet": null,
+    "avoid": true
+   }
+  ]
+ },
+ "recNotes": [
+  "NBA2KLab's own 2K27 badge effectiveness tests were still marked \"Test pending\" on nba2klab.com/badges when this data was compiled (Oct 12, 2026). NBA2KLab picks here come from its Recommended Builds pages (Max +1/+2 targets and badge unlocks), not lab test percentages.",
+  "Community sources (tier lists, Reddit, build sites) sometimes disagree; conflicts are noted per badge.",
+  "Mode adjustments, loadout ordering and the 20-slot fill are this app's estimate. Per-discipline slot limits are not modeled."
+ ]
+}

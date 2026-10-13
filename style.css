@@ -1,0 +1,45 @@
+:root{--bg:#0E1320;--sf:#161D2E;--sv:#1F2840;--pr:#F28C28;--sec:#3A86FF;--mut:#8E9AB8;--txt:#E8ECF5;--sub:#B8C2D9}
+*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Roboto,sans-serif;-webkit-text-size-adjust:100%}
+#shell{display:flex;min-height:100vh}
+#nav{position:fixed;left:0;top:0;bottom:0;width:84px;background:var(--sf);display:flex;flex-direction:column;align-items:center;padding-top:calc(12px + env(safe-area-inset-top));gap:6px;z-index:5}
+#nav button{background:none;border:0;color:var(--sub);display:flex;flex-direction:column;align-items:center;font-size:12px;padding:6px 0;width:72px;border-radius:16px;cursor:pointer}
+#nav button .ic{font-size:20px;padding:2px 16px;border-radius:14px}
+#nav button.on{color:var(--txt)}#nav button.on .ic{background:#3a4566}
+.logo{width:44px;height:44px;border-radius:50%;background:var(--pr);color:var(--bg);font-weight:900;font-size:12px;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+#main{margin-left:84px;flex:1;min-width:0;padding-top:env(safe-area-inset-top)}
+.panes{display:flex;height:100vh}.pane{flex:1;overflow:auto;padding:12px 16px 60px;min-width:0}.pane+.pane{border-left:1px solid #2A3350}
+.p45{flex:.45}.p55{flex:.55}
+h1{font-size:24px;font-weight:900;margin:8px 0 2px}h2{font-size:18px;margin:16px 0 6px}
+.mut{color:var(--mut);font-size:12px}.sub{color:var(--sub);font-size:13px}
+.card{background:var(--sf);border-radius:12px;padding:12px;margin:8px 0}.card.sel{background:var(--sv)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chips.scroll{flex-wrap:nowrap;overflow-x:auto;padding:4px 0}
+.chip{border:1px solid #4a5470;background:none;color:var(--txt);border-radius:8px;padding:6px 12px;font-size:14px;white-space:nowrap;cursor:pointer}
+.chip.on{background:#3a4566;border-color:#3a4566}
+.pill{display:inline-block;border-radius:99px;padding:2px 10px;font-size:12px;font-weight:700;border:1px solid}
+.row{display:flex;align-items:center;gap:10px}.grow{flex:1;min-width:0}
+.sl{margin:6px 0}.sl .row{justify-content:space-between;font-size:14px}.sl b{color:var(--c,var(--pr))}
+input[type=range]{width:100%;accent-color:var(--c,var(--pr))}
+.search{width:100%;padding:12px 18px;border-radius:28px;border:1px solid #4a5470;background:transparent;color:var(--txt);font-size:16px;margin-top:8px}
+.bname{font-weight:700}.ell{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pips{display:flex;gap:3px;margin-top:4px}.pips i{width:14px;height:6px;border-radius:3px;background:#2A3350}
+.bar{position:relative;height:10px;background:#2A3350;border-radius:5px}.bar>div{height:100%;border-radius:5px}.bar s{position:absolute;top:0;bottom:0;width:2px}
+table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:4px 2px;font-size:14px}
+a,.link{color:#6FA8FF;text-decoration:none;cursor:pointer}
+.src{display:inline-block;font-size:11px;border-radius:6px;padding:2px 6px;margin:3px 4px 0 0}
+.src.lab{color:#52D17C;background:#52D17C1f}.src.community{color:#6FA8FF;background:#6FA8FF1f}
+.est{color:#FFB020;font-size:11px}.tip{color:#FFC83D;font-size:12px}.bad{color:#FF8A8A;font-size:12px}
+.rank{width:28px;font-weight:900;font-size:18px;color:var(--pr)}
+.tabs{display:none}.switch{display:flex;align-items:center;gap:6px;font-size:12px}
+.syn{display:flex;gap:6px}.syn div{display:flex;flex-direction:column;align-items:center;font-size:11px;gap:2px}
+.syn span{width:30px;height:30px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:900}
+/* phone */
+@media (max-width:719px){
+ #nav{top:auto;bottom:0;right:0;width:auto;height:calc(64px + env(safe-area-inset-bottom));flex-direction:row;justify-content:space-around;padding:4px 0 env(safe-area-inset-bottom)}
+ #nav .logo{display:none}#nav button{width:auto;flex:1}
+ #main{margin-left:0;padding-bottom:calc(70px + env(safe-area-inset-bottom))}
+ .panes{display:block;height:auto}.pane{overflow:visible;padding-bottom:20px}.pane+.pane{border-left:0}
+ .panes.tabbed .pane{display:none}.panes.tabbed .pane.show{display:block}
+ .tabs{display:flex;position:sticky;top:0;background:var(--bg);z-index:3;border-bottom:1px solid #2A3350}
+ .tabs button{flex:1;background:none;border:0;color:var(--sub);padding:12px;font-size:14px;border-bottom:3px solid transparent}
+ .tabs button.on{color:var(--pr);border-color:var(--pr)}
+}
